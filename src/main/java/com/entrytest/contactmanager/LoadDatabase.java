@@ -16,7 +16,7 @@ public class LoadDatabase {
     CommandLineRunner loadData(ContactRepository contactRepository) {
         return args -> {
             log.info("Preload " + contactRepository.save(new Contact("John Doe", "Alex", "Manager", "Apple", "abc@abc.com", "09887477447", new SimpleDateFormat("dd/MM/yyyy").parse("14/03/1993"), "Nothing")));
-            log.info("Preload " + contactRepository.save(new Contact("Alex Furguson", "Henry", "Private Manager", "Google", "abc1@abc.com", "98980008080", new SimpleDateFormat("dd/MM/yyyy").parse("12/03/1988"), "Alpha")));
+            log.info("Preload " + contactRepository.save(new Contact("Alex Ferguson", "Henry", "Private Manager", "Google", "abc1@abc.com", "98980008080", new SimpleDateFormat("dd/MM/yyyy").parse("12/03/1988"), "Alpha")));
         };
     }
 }

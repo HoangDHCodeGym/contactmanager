@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Collections;
 import java.util.Date;
 
-import static com.entrytest.contactmanager.filter.Constants.*;
+import static com.entrytest.contactmanager.filter.JwtConstants.*;
 
 public class JwtUtils {
     public static void setAuthentication(HttpServletResponse response, String username) {

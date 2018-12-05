@@ -6,7 +6,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "contacts", path = "contacts")
+@RepositoryRestResource(collectionResourceRel = "contacts", path = "api/contacts")
 public interface ContactRepository extends PagingAndSortingRepository<Contact, Long> {
     List<Contact> findAll();
 }
